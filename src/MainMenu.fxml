@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="Background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #ccccff;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainMenuController">
+   <top>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text fx:id="TitleText" layoutX="252.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Evolutionary Algorithm" textOrigin="CENTER">
+               <font>
+                  <Font name="Nirmala UI Semilight" size="30.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="350.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="startBtn" layoutX="400.0" layoutY="350.0" mnemonicParsing="false" onAction="#startAlgorithm" text="Start" />
+            <ChoiceBox fx:id="choiceMutation" layoutX="125.0" layoutY="50.0" prefWidth="150.0">
+               <effect>
+                  <Glow />
+               </effect></ChoiceBox>
+            <ChoiceBox fx:id="choiceSelection" layoutX="125.0" layoutY="125.0" prefWidth="150.0" />
+            <ChoiceBox fx:id="choiceReplacement" layoutX="125.0" layoutY="200.0" prefWidth="150.0" />
+            <ChoiceBox fx:id="choiceCrossover" layoutX="125.0" layoutY="275.0" prefWidth="150.0" />
+            <ChoiceBox fx:id="choiceFitnessFunction" layoutX="125.0" layoutY="350.0" prefWidth="150.0" />
+            <Label layoutX="10.0" layoutY="50.0" text="Mutation Type:">
+               <font>
+                  <Font name="Nirmala UI Semilight" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="125.0" text="Selection Type:">
+               <font>
+                  <Font name="Nirmala UI Semilight" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="200.0" text="Replacement Type:">
+               <font>
+                  <Font name="Nirmala UI Semilight" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="275.0" text="Crossover Type:">
+               <font>
+                  <Font name="Nirmala UI Semilight" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="350.0" text="Fitness Evaluation:">
+               <font>
+                  <Font name="Nirmala UI Semilight" size="13.0" />
+               </font>
+            </Label>
+            <Spinner fx:id="bitStrLengthSpinner" editable="true" layoutX="450.0" layoutY="50.0" />
+            <Label layoutX="335.0" layoutY="50.0" text="Bit String Length:">
+               <font>
+                  <Font name="Nirmala UI Semilight" size="13.0" />
+               </font>
+            </Label>
+            <Spinner fx:id="popSpinner" editable="true" layoutX="450.0" layoutY="125.0" />
+            <Label layoutX="335.0" layoutY="125.0" text="Population Size:">
+               <font>
+                  <Font name="Nirmala UI Semilight" size="13.0" />
+               </font>
+            </Label>
+            <Spinner fx:id="offspringSpinner" editable="true" layoutX="450.0" layoutY="200.0" />
+            <Label layoutX="338.0" layoutY="200.0" text="Offspring Size:">
+               <font>
+                  <Font name="Nirmala UI Semilight" size="13.0" />
+               </font>
+            </Label>
+            <Spinner fx:id="tournamentSpinner" disable="true" editable="true" layoutX="450.0" layoutY="275.0" />
+            <Label layoutX="335.0" layoutY="275.0" text="Tournament Size:">
+               <font>
+                  <Font name="Nirmala UI Semilight" size="13.0" />
+               </font>
+            </Label>
+
+         </children>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor></AnchorPane>
+   </center>
+   <bottom>
+      <AnchorPane prefHeight="100.0" prefWidth="800.0" BorderPane.alignment="CENTER" />
+   </bottom>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</BorderPane>

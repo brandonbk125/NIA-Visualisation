@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #ccccff;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EAVisualController">
+   <left>
+      <VBox prefHeight="600.0" prefWidth="136.0" style="-fx-background-color: #ccccff;" BorderPane.alignment="CENTER" />
+   </left>
+   <top>
+      <SplitPane dividerPositions="0.967741935483871" orientation="VERTICAL" prefHeight="105.0" prefWidth="800.0" style="-fx-background-color: #ccccff;" BorderPane.alignment="CENTER">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Text layoutX="150.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Evolutionary Algorithm: Visualisation">
+                     <font>
+                        <Font name="Nirmala UI Semilight" size="30.0" />
+                     </font></Text>
+                  <Button fx:id="backBtn" layoutX="14.0" layoutY="25.0" mnemonicParsing="false" onAction="#backButton" text="Back" />
+               </children></AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+        </items>
+      </SplitPane>
+   </top>
+   <center>
+      <LineChart fx:id="EAGraph" prefHeight="350.0" prefWidth="480.0" style="-fx-create-symbols: false;" title="Fitness Evaluation" BorderPane.alignment="CENTER">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+   </center>
+   <right>
+      <TextFlow fx:id="txtFlowEAInfo" prefHeight="495.0" prefWidth="184.0" style="-fx-font-family: 'Nirmala UI Semilight'" BorderPane.alignment="CENTER" />
+   </right>
+   <bottom>
+      <SplitPane dividerPositions="0.032846715328467155" orientation="VERTICAL" prefHeight="93.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #ccccff;">
+               <children>
+                  <Button fx:id="nextBtn" layoutX="365.0" layoutY="14.0" mnemonicParsing="false" onAction="#next" text="Next Step" />
+                  <CheckBox fx:id="ckbAvgFitness" layoutX="518.0" layoutY="12.0" mnemonicParsing="false" text="Average Fitness" />
+                  <CheckBox fx:id="ckbStdDev" layoutX="518.0" layoutY="32.0" mnemonicParsing="false" text="Standard Deviation" />
+                  <CheckBox fx:id="ckbMaxFit" layoutX="660.0" layoutY="12.0" mnemonicParsing="false" text="Max Fitness" />
+                  <CheckBox fx:id="ckbMinFit" layoutX="660.0" layoutY="34.0" mnemonicParsing="false" text="Min Fitness" />
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+   </bottom>
+</BorderPane>
