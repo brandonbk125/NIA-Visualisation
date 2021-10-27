@@ -1,7 +1,7 @@
 # The Visualisation of Nature-Inspired Algorithms
 This is the application that I made with the work on my dissertation on Nature-Inspired Algorithms, and the visualisation of them. 
 
-#Introduction
+# Introduction
 Nature-inspired algorithms is a large field of research that encapsulates a vast number of
 different algorithms, that have been getting more popular because of their good
 performances. The classic example of a nature-inspired algorithm is the Evolutionary
